@@ -8,7 +8,22 @@
 
       'intro/about-me',
       'intro/about-us',
-      
+
+      'intro/why-ts',
+      'intro/why-ts-errors',
+      'intro/why-ts-growing',
+      'intro/why-ts-next-today',
+
+      'intro/how-ts',
+      'intro/how-ts-superset',
+      'intro/how-ts-es6',
+      'intro/how-ts-hurdle',
+      'intro/es-to-ts',
+      'intro/es-to-ts-error',
+
+      'intro/ts-ng2',
+      'intro/ts-ng2-you',
+
       'end'
     ];
 

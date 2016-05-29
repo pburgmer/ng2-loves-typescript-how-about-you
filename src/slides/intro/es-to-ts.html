@@ -1,0 +1,20 @@
+<div w11k-slide-master="regular">
+  <div w11k-slide-part-source="header">
+    EcmaScript zu TypeScript portieren
+  </div>
+
+  <div w11k-slide-part-source="content">
+    <ul class="simple">
+      <li><code>*.js</code> Datei in <code>*.ts</code> umbenennen</li>
+      <li>TypeScript ist Superset -> prinzipiell jeder ES Code gültig</li>
+      <li>Compiler kennt APIs der Umgebung (Browser mit DOM oder Node)</li>
+      <li>Compiler analysiert eigenen Code (Type Inferencing)</li>
+    </ul>
+<pre w11k-pretty-print lang="js">
+Object.defineProperty(window, "myAppVersion", {
+  value: 'v0.1.0', readOnly: true
+});
+</pre>
+  </div>
+
+</div>
