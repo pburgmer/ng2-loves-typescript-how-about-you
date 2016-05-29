@@ -1,13 +1,18 @@
-$tcc_orange: #ed5502;
-$tcc-gray: #1c2330;
+@import "boxed-variables";
+
+$tcc_orange: #FFEE00;
+$tcc-gray: #515151;
 $tcc-gray-light: lighten($tcc-gray, 20%);
 $tcc-gray-lighter: lighten($tcc-gray, 40%);
 $tcc-gray-lightest: lighten($tcc-gray, 78%);
-$tcc-gradient-orange-start: #fc9253;
-$tcc-gradient-orange-end: #f26135;
-$tcc-code-bg-1: desaturate($tcc-gray-lightest, 50%);
-$tcc-code-bg-2: darken($tcc-code-bg-1, 5%);
-$tcc-code-bg-3: darken($tcc-code-bg-1, 20%);
+$tcc-quote-highlight: $tcc-orange;
+
+$tcc-slide-title-background: none;
+$tcc-slide-title-center-background: none;
+
+$tcc-regular-header-background: url("assets/images/webinale_artwork.jpg") left 18% no-repeat;
+$tcc-regular-footer-background: url("assets/images/webinale_artwork.jpg") left bottom no-repeat;
+
 
 // ****************************************************************************************************
 // general
@@ -66,27 +71,86 @@ $w11k-prettyPrint-line-color-highlight: $tcc-code-bg-3;
 // ****************************************************************************************************
 
 .tcc-2016 {
+  .slides.export > .slide-container > div > .slide {
+    &.title {
+      font-size: 16pt;
+
+      h1 {
+        font-size: 3em;
+      }
+    }
+
+    &.end {
+      font-size: 1em;
+    }
+  }
+
   .slides > .slide-container > div > .slide {
 
-    &.title {
+    a {
+      color: black;
+      text-decoration: none;
 
+      &[href^="#"] {
+        color: black;
+      }
+
+      &[href^="http"], &[href^="mailto"] {
+        color: black;
+        text-decoration: underline;
+      }
+
+    }
+
+    &.title {
+      background: url("assets/images/webinale_artwork.jpg") left 67% no-repeat;
+      background-size: cover;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: stretch;
+
+      padding-top: 4%;
+
+      .center {
+        .content {
+          h1 {
+            margin-top: 16px;
+          }
+
+          text-align: center;
+          text-shadow: 1px 1px 3px white;
+        }
+      }
+    }
+
+    &.master-regular {
+      .header, .footer {
+        background-size: cover;
+      }
     }
 
     &.end {
       display: flex;
       width: 100%;
       height: 100%;
+      padding-top: 20vh;
       flex-direction: column;
-      justify-content: space-around;
+      justify-content: flex-start;
       align-items: center;
 
-      background: linear-gradient(to right, $tcc-gradient-orange-start, $tcc-gradient-orange-end);
+      background: url("assets/images/webinale_artwork.jpg") left 67% no-repeat;
+      background-size: cover;
+
+      font-size: 1.5em;
 
       > div {
         text-align: center;
-        color: white;
+        color: black;
+        text-shadow: 1px 1px 3px white;
         a, a:visited, a[href^="http"], a[href^="mailto"] {
-          color: white;
+          color: black;
           text-decoration: none;
         }
       }
