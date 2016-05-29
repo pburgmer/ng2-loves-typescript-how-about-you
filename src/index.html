@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="<%= angular_module %>" strict-di>
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta name="viewport" content="width=device-width"/>
+
+  <link rel="shortcut icon" type="image/x-icon" href="assets/fav-icon/tcc-icon.ico" >
+  <link rel="shortcut icon" type="image/png" href="assets/fav-icon/tcc-icon-16.png" sizes="16x16">
+  <link rel="shortcut icon" type="image/png" href="assets/fav-icon/tcc-icon-32.png" sizes="32x32">
+  <link rel="shortcut icon" type="image/png" href="assets/fav-icon/tcc-icon-64.png" sizes="64x64">
+  <link rel="shortcut icon" type="image/png" href="assets/fav-icon/tcc-icon-96.png" sizes="96x96">
+  <link rel="shortcut icon" type="image/png" href="assets/fav-icon/tcc-icon-128.png" sizes="128x128">
+  <link rel="shortcut icon" type="image/png" href="assets/fav-icon/tcc-icon-192.png" sizes="192x192">
+  <link rel="shortcut icon" type="image/png" href="assets/fav-icon/tcc-icon-256.png" sizes="256x256">
+  <link rel="shortcut icon" type="image/png" href="assets/fav-icon/tcc-icon-512.png" sizes="512x512">
+  <link rel="shortcut icon" type="image/svg+xml" href="assets/fav-icon/tcc-icon.svg" sizes="any">
+
+  <title>Penetrationstests für Entwickler</title>
+
+  <% styles.forEach( function ( file ) { %>
+  <link rel="stylesheet" type="text/css" media="all" href="<%= file %>"/>
+  <% }); %>
+
+</head>
+
+<body class="tcc-2016">
+<div w11k-slides></div>
+
+<% scripts.forEach( function ( file ) { %>
+<script type="text/javascript" src="<%= file %>"></script>
+<% }); %>
+</body>
+</html>

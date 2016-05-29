@@ -1,0 +1,10 @@
+{
+  "name": "penetration-tests-for-developers",
+  "devDependencies": {
+    "angular": "1.4.3",
+    "angular-sanitize": "1.4.3",
+    "angular-bootstrap": "0.14.1",
+    "twbs-bootstrap-sass": "3.3.5",
+    "w11k-slides": "0.13.0"
+  }
+}

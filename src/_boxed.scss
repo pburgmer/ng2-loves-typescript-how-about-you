@@ -1,0 +1,587 @@
+@import "boxed-variables";
+
+// ****************************************************************************************************
+// font
+// ****************************************************************************************************
+
+@font-face {
+  font-family: 'SourceCodePro';
+  src: url('assets/font/source-code-pro_regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Aller';
+  src: url('assets/font/aller_rg.woff') format('woff');
+}
+@font-face {
+  font-family: 'Aller';
+  src: url('assets/font/aller_rg_it.woff') format('woff');
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Aller';
+  src: url('assets/font/aller_bd.woff') format('woff');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Aller';
+  src: url('assets/font/aller_bd_it.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Aller';
+  src: url('assets/font/aller_lt.woff') format('woff');
+  font-weight: 200;
+}
+@font-face {
+  font-family: 'Aller';
+  src: url('assets/font/aller_lt_it.woff') format('woff');
+  font-weight: 200;
+  font-style: italic;
+}
+
+html, body, * {
+  font-family: 'Aller';
+}
+
+// ****************************************************************************************************
+// tcc-2016
+// ****************************************************************************************************
+
+
+.tcc-2016 .slides {
+
+  &.screen > .slide-container {
+    > div > .slide {
+      width: 100vw;
+      maxwidth: 100vw;
+      min-height: 100vh;
+    }
+  }
+
+  &.export > .slide-container {
+
+    page-break-before: always;
+    display: block !important;
+
+    > div > .slide {
+      width: 297mm;
+      max-width: 297mm;
+      min-height: 210mm;
+
+      &.master-title {
+        font-size: 18pt;
+      }
+
+      &.master-regular {
+        overflow: hidden;
+        .header {
+          position: relative;
+          width: 100%;
+
+          // see https://bugs.chromium.org/p/chromium/issues/detail?id=174583
+          box-shadow: none;
+        }
+
+        .content {
+          font-size: 16pt;
+        }
+
+        .footer {
+          .end {
+            width: 99mm;
+          }
+        }
+      }
+    }
+  }
+
+  & > .slide-container > div > .slide {
+
+    a {
+      color: $tcc_orange;
+      text-decoration: none;
+
+      &[href^="#"] {
+        color: $tcc-gray;
+      }
+
+      &[href^="http"], &[href^="mailto"] {
+        color: $tcc_orange;
+        text-decoration: underline;
+      }
+
+    }
+
+    figure {
+      figcaption {
+        text-align: right;
+        color: $tcc-gray-lighter;
+        font-weight: 200;
+        font-size: 0.5em;
+      }
+    }
+
+    &.master-title {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: center;
+
+      padding: 0;
+      overflow: hidden;
+
+      background: $tcc-slide-title-background;
+
+      h1 {
+        margin: 0;
+        font-size: 3em;
+      }
+
+      .top {
+        padding: 0 1.5em;
+        text-align: center;
+
+        img {
+          max-width: 100%;
+          max-height: 2em;
+          margin: 0 auto 0.5em;
+        }
+      }
+
+      .center {
+        text-align: center;
+        margin: 1.5em -2em;
+        transform: rotate(-3deg);
+        overflow: hidden;
+
+        .content {
+          background-color: $tcc-gray;
+          background: $tcc-slide-title-center-background;
+
+          transform: rotate(3deg);
+          padding: 8% 5%;
+          margin: -4.5% 0 -4.5%;
+        }
+        h1, h1 small {
+          color: white
+        }
+      }
+
+      .bottom {
+        padding: 0 1.5em;
+        text-align: center;
+
+        .content {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          img {
+            margin: 0 1em;
+          }
+        }
+      }
+    }
+
+    &.master-section-title {
+      > .content {
+        h2, h3, h4 {
+          font-size: 3em;
+          text-align: center;
+
+          small {
+            color: $tcc-gray-lighter;
+          }
+        }
+      }
+    }
+
+    &.master-regular {
+      $slide-padding-horizontal: 60px;
+      $slide-padding-vertical: 30px;
+
+      $header-height: 80px;
+      $header-offset: 10px;
+
+      display: flex;
+      flex-direction: column;
+
+      position: relative;
+
+      padding-top: $header-height;
+
+      > .header {
+        position: absolute;
+        z-index: 9;
+        height: $header-height - $header-offset;
+        width: 100%;
+        margin-top: $header-height * -1;
+        margin-bottom: $header-offset;
+
+        background: $tcc-regular-header-background;
+
+        display: flex;
+        align-items: stretch;
+
+        box-shadow: 0px 2px ($header-offset * 1.2) lighten($tcc-gray, 60%);
+
+        .start {
+          margin-bottom: $header-offset * -1;
+          padding-bottom: $header-offset;
+
+          background: url('assets/images/tcc-header-bg-gray.svg') right top no-repeat;
+          background-size: auto 100%;
+          width: $slide-padding-horizontal + (($header-height) * 0.7967 * 0.5);
+          padding-right: 35px;
+
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+        }
+
+        .end {
+          flex: auto;
+
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+
+
+          > div, > span {
+            padding-left: 0.5em;
+            padding-right: $slide-padding-horizontal;
+            overflow: hidden;
+
+            flex: auto;
+
+            h2 {
+              color: white;
+              padding: 0;
+              margin: 0;
+              font-size: 1.3em;
+              font-weight: 200;
+              line-height: 1.3;
+
+              white-space: nowrap;
+            }
+          }
+        }
+      }
+
+      > .content {
+        flex: 1 0 auto;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: $slide-padding-vertical $slide-padding-horizontal;
+
+
+        @import "w11k-slides/dist/prettyprint/prettyprint";
+
+        code {
+          color: #48484c;
+          background-color: $w11k-prettyPrint-line-color;
+          font-family: "SourceCodePro";
+        }
+
+        .w11k-pretty-print {
+          font-weight: 200;
+
+          * {
+            font-family: "SourceCodePro";
+          }
+
+          pre.prettyprint {
+            font-size: 0.9em;
+            border-radius: 0;
+            border: 0;
+            margin-left: -0.6em;
+            margin-bottom: 0.7em;
+          }
+
+          pre.prettyprint.linenums ol.linenums > li {
+            $border-radius: 0.1em;
+
+            &:first-of-type {
+              border-top-left-radius: $border-radius;
+              border-top-right-radius: $border-radius;
+            }
+
+            &:last-of-type {
+              border-bottom-left-radius: $border-radius;
+              border-bottom-right-radius: $border-radius;
+            }
+
+            &:before {
+              color: $w11k-prettyPrint-line-color-alternate;
+            }
+
+            padding: 0 0.5em;
+            white-space: pre-wrap;
+            border-left: 0;
+          }
+        }
+
+        ul, ol {
+          list-style: none;
+          margin-left: 0;
+          padding-left: 0;
+
+          > li {
+            padding: 0 0 0 1.4em;
+            margin-bottom: 0.7em;
+
+            ul {
+              li {
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
+
+        ul.simple, ol.simple {
+
+          > li {
+
+            &:before {
+              position: absolute;
+              content: "<>";
+              font-weight: 200;
+              color: $tcc-orange;
+              margin-left: -1.4em;
+            }
+
+            .w11k-pretty-print, ul li .w11k-pretty-print {
+              margin-left: -1.4em;
+
+              & + ul {
+                margin-top: -0.5em;
+              }
+            }
+
+            ul, ol {
+              list-style: none;
+              margin-bottom: 0.7em;
+              margin-left: 0;
+              padding-left: 0;
+
+              & + * {
+                margin-top: -0.5em;
+              }
+
+              > li {
+                padding: 0 0 0 0.8em;
+                margin-bottom: 0;
+                font-weight: 200;
+
+                &:before {
+                  position: absolute;
+                  content: '-';
+                  color: $tcc-orange;
+                  margin-left: -0.8em;
+                  padding-left: 0.1em;
+                }
+              }
+            }
+            ol {
+              counter-reset: sub-ol-counter;
+
+              > li {
+                counter-increment: sub-ol-counter;
+
+                &:before {
+                  content: counter(sub-ol-counter);
+                }
+              }
+            }
+          }
+        }
+
+        ol.simple {
+          counter-reset: ol-counter;
+          list-style-type: none;
+
+          > li {
+            counter-increment: ol-counter;
+            padding-left: 2.2em;
+
+            &:before {
+              position: absolute;
+              margin-left: -2.2em;
+              color: $tcc-orange;
+              font-weight: 200;
+              content: "<" counter(ol-counter) ">";
+            }
+          }
+        }
+
+        ul + ul {
+          margin-top: 2em;
+        }
+
+        ul.as-headlines {
+
+          > li {
+            font-weight: bold;
+
+            &:first-of-type:before, &:last-of-type:after, &:before, &:after {
+              content: "";
+            }
+
+            > ul {
+              list-style: none;
+              margin-left: -1.4em;
+              padding-left: 0;
+              margin-bottom: 0;
+
+              > li {
+                position: relative;
+                padding-left: 2.4em;
+                text-indent: -1em;
+                margin-bottom: 0;
+
+                font-size: 1em;
+                font-weight: 200;
+
+                &:before, &:after {
+                  content: "";
+                }
+              }
+
+              > li:first-of-type {
+
+                &:before {
+                  position: absolute;
+                  content: "<>";
+                  color: $tcc-orange;
+                  margin-left: -0.4em;
+                }
+              }
+
+              > li:last-of-type:not(.as-headline) {
+                &:after {
+                  content: " </>";
+                  color: $tcc-orange;
+                }
+              }
+            }
+          }
+        }
+
+        .column-based-comparison {
+          @extend .table;
+          @extend .table-striped;
+          @extend .table-condensed;
+
+          margin-bottom: 0;
+
+          th {
+            font-weight: normal;
+          }
+
+          tbody {
+            td {
+              font-weight: 200;
+            }
+            td:first-child {
+              font-weight: normal;
+            }
+          }
+        }
+
+        pre {
+          padding: 0.7em;
+          font-family: "SourceCodePro";
+          font-size: 0.9em;
+        }
+
+        .w11k-pretty-print pre {
+          padding: 0;
+        }
+
+        blockquote {
+          font-size: 1.5em;
+          margin: 2em 10vw;
+          padding: 0.3em 0 0.3em 1em;
+          border-left: 0.1em solid $tcc-quote-highlight;
+
+          cite {
+            color: $tcc-quote-highlight;
+            font-size: 0.666em;
+          }
+        }
+      }
+
+      > .footer {
+
+        $footer-offset: 10px;
+        flex: none;
+
+        height: 32px;
+        background: $tcc-regular-footer-background;
+
+        display: flex;
+        align-items: stretch;
+        margin-top: $footer-offset;
+
+        .start {
+          flex: auto;
+
+          font-size: 0.5em;
+          font-weight: 200;
+
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+
+          div {
+            color: white;
+            padding-left: $slide-padding-horizontal;
+          }
+        }
+
+        .end {
+          width: 38.2%;
+          padding-left: 35px;
+          margin-top: $footer-offset * -1;
+          //padding-top: $footer-offset;
+
+          background: url('assets/images/tcc-footer-bg-gray.svg') left bottom no-repeat;
+          background-size: cover;
+          font-size: 0.7em;
+          font-weight: 200;
+
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+
+          div {
+            color: white;
+            padding-right: $slide-padding-horizontal;
+          }
+        }
+      }
+    }
+
+    &.master-end {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+
+      background: linear-gradient(to right, $tcc-gradient-orange-start, $tcc-gradient-orange-end);
+
+      color: white;
+      a, a:visited, a[href^="http"], a[href^="mailto"] {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+}

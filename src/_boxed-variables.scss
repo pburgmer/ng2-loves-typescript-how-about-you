@@ -1,0 +1,20 @@
+$tcc_orange: #ed5502 !default;
+$tcc-gray: #1c2330 !default;
+$tcc-gray-light: lighten($tcc-gray, 20%) !default;
+$tcc-gray-lighter: lighten($tcc-gray, 40%) !default;
+$tcc-gray-lightest: lighten($tcc-gray, 78%) !default;
+
+$tcc-gradient-orange-start: #fc9253 !default;
+$tcc-gradient-orange-end: #f26135 !default;
+
+$tcc-code-bg-1: desaturate($tcc-gray-lightest, 50%) !default;
+$tcc-code-bg-2: darken($tcc-code-bg-1, 5%) !default;
+$tcc-code-bg-3: darken($tcc-code-bg-1, 20%) !default;
+
+$tcc-quote-highlight: $tcc-gray-lighter !default;
+
+$tcc-slide-title-background: linear-gradient(to right, $tcc-gradient-orange-start, $tcc-gradient-orange-end) !default;
+$tcc-slide-title-center-background: linear-gradient(to right, $tcc-gray, lighten($tcc-gray, 7%)) !default;
+
+$tcc-regular-header-background: linear-gradient(to right, $tcc-gradient-orange-start, $tcc-gradient-orange-end) !default;
+$tcc-regular-footer-background: linear-gradient(to left, $tcc-gradient-orange-start, $tcc-gradient-orange-end) !default;

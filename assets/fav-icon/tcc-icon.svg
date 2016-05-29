@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1"
+	 id="svg2" inkscape:version="0.91 r13725" sodipodi:docname="tcc-icon.svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 256 256"
+	 style="enable-background:new 0 0 256 256;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_);}
+	.st1{fill:url(#path32_1_);}
+	.st2{fill:#FFFFFF;}
+</style>
+<sodipodi:namedview  bordercolor="#666666" borderopacity="1" fit-margin-bottom="0" fit-margin-left="0" fit-margin-right="0" fit-margin-top="0" gridtolerance="10" guidetolerance="10" id="namedview4" inkscape:current-layer="g10" inkscape:cx="64.000056" inkscape:cy="64.000022" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-height="1391" inkscape:window-maximized="1" inkscape:window-width="2560" inkscape:window-x="1440" inkscape:window-y="23" inkscape:zoom="9.5703125" objecttolerance="10" pagecolor="#ffffff" showgrid="false">
+	</sodipodi:namedview>
+<g id="g10" transform="matrix(1.25,0,0,-1.25,-360.33118,727.52747)" inkscape:groupmode="layer" inkscape:label="tcc-icon">
+	<g id="g3439" transform="matrix(5.5576662,0,0,5.5575154,-1313.8157,-1719.1951)">
+		<g id="g12">
+			<g>
+				<g>
+					<defs>
+						<path id="SVGID_1_" d="M292.8,413.6c0,0-4.1,0-4.1-4.1l0,0v-27.7c0,0,0-4.1,4.1-4.1l0,0h27.7c0,0,4.1,0,4.1,4.1l0,0v27.7
+							c0,0,0,4.1-4.1,4.1l0,0H292.8z"/>
+					</defs>
+					<clipPath id="SVGID_2_">
+						<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+					</clipPath>
+					<g id="g14" class="st0">
+						<g id="g20">
+							<g id="g22">
+								
+									<linearGradient id="path32_1_" gradientUnits="userSpaceOnUse" x1="300.6425" y1="387.2592" x2="301.6206" y2="387.2592" gradientTransform="matrix(1778.4719 0 0 -1778.3759 -534395.5625 689088.125)">
+									<stop  offset="0" style="stop-color:#F57947"/>
+									<stop  offset="0.415" style="stop-color:#F14E37"/>
+									<stop  offset="1" style="stop-color:#F14E37"/>
+								</linearGradient>
+								<path id="path32" inkscape:connector-curvature="0" class="st1" d="M292.8,413.6c0,0-4.1,0-4.1-4.1l0,0v-27.7
+									c0,0,0-4.1,4.1-4.1l0,0h27.7c0,0,4.1,0,4.1,4.1l0,0v27.7c0,0,0,4.1-4.1,4.1l0,0H292.8z"/>
+							</g>
+						</g>
+					</g>
+				</g>
+			</g>
+		</g>
+		<g id="g34" transform="translate(301.6919,390.2352)">
+			<path id="path36" inkscape:connector-curvature="0" class="st2" d="M0.1,0.1l-9.8,4.4V6l10.2,4.9L0.4,8.6l-7-3.2l6.8-2.9L0.1,0.1
+				z"/>
+		</g>
+		<g id="g38" transform="translate(311.1919,403.1383)">
+			<path id="path40" inkscape:connector-curvature="0" class="st2" d="M0-0.2l-6-14.7h-2.8l6,14.7C-2.8-0.2,0-0.2,0-0.2z"/>
+		</g>
+		<g id="g42" transform="translate(311.4073,392.6855)">
+			<path id="path44" inkscape:connector-curvature="0" class="st2" d="M0,0l6.9,2.9L0.2,6.1l0.1,2.4L10,3.5L9.9,2L-0.1-2.3L0,0z"/>
+		</g>
+	</g>
+</g>
+</svg>

@@ -1,0 +1,15 @@
+.DS_Store
+Thumbs.db
+
+.idea
+*.iml
+
+*.log
+
+node_modules
+.sass-cache
+
+build-config/developer.config.js
+build-output
+
+vendor

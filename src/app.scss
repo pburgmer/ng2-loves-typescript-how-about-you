@@ -1,0 +1,96 @@
+$tcc_orange: #ed5502;
+$tcc-gray: #1c2330;
+$tcc-gray-light: lighten($tcc-gray, 20%);
+$tcc-gray-lighter: lighten($tcc-gray, 40%);
+$tcc-gray-lightest: lighten($tcc-gray, 78%);
+$tcc-gradient-orange-start: #fc9253;
+$tcc-gradient-orange-end: #f26135;
+$tcc-code-bg-1: desaturate($tcc-gray-lightest, 50%);
+$tcc-code-bg-2: darken($tcc-code-bg-1, 5%);
+$tcc-code-bg-3: darken($tcc-code-bg-1, 20%);
+
+// ****************************************************************************************************
+// general
+// ****************************************************************************************************
+
+$font-size-base: 33px;
+$table-bg-accent: $tcc-code-bg-1;
+
+// Core variables and mixins
+@import "twbs-bootstrap-sass/assets/stylesheets/bootstrap//variables";
+@import "twbs-bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+
+// Reset
+@import "twbs-bootstrap-sass/assets/stylesheets/bootstrap/normalize";
+//@import "twbs-bootstrap-sass/assets/stylesheets/bootstrap/print";
+
+// Core CSS
+@import "twbs-bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
+@import "twbs-bootstrap-sass/assets/stylesheets/bootstrap/type";
+@import "twbs-bootstrap-sass/assets/stylesheets/bootstrap/code";
+@import "twbs-bootstrap-sass/assets/stylesheets/bootstrap/grid";
+@import "twbs-bootstrap-sass/assets/stylesheets/bootstrap/forms";
+@import "twbs-bootstrap-sass/assets/stylesheets/bootstrap/buttons";
+@import "twbs-bootstrap-sass/assets/stylesheets/bootstrap/tables";
+
+// Utility classes
+@import "twbs-bootstrap-sass/assets/stylesheets/bootstrap/utilities";
+@import "twbs-bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
+
+
+@import "twbs-bootstrap-sass/assets/stylesheets/bootstrap/modals";
+
+// ****************************************************************************************************
+// w11k-slides config
+// ****************************************************************************************************
+
+$theCodeCampus_orange: $tcc_orange;
+$w11k-cornerRibbon-distance: 5em;
+$w11k-cornerRibbon-background-color: linear-gradient(to left, $tcc-gray, lighten($tcc-gray, 7%));
+$w11k-cornerRibbon-border-color: $tcc-gradient-orange-end;
+
+$w11k-prettyPrint-line-color: $tcc-code-bg-1;
+$w11k-prettyPrint-line-color-alternate: $tcc-code-bg-2;
+$w11k-prettyPrint-line-color-highlight: $tcc-code-bg-3;
+
+@import "w11k-slides/dist/variables";
+@import "w11k-slides/dist/slides/mixins";
+@import "w11k-slides/dist/corner-ribbon/corner-ribbon";
+
+@import "boxed-print";
+@import "boxed";
+@import "overlay";
+
+// ****************************************************************************************************
+// slides content
+// ****************************************************************************************************
+
+.tcc-2016 {
+  .slides > .slide-container > div > .slide {
+
+    &.title {
+
+    }
+
+    &.end {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+
+      background: linear-gradient(to right, $tcc-gradient-orange-start, $tcc-gradient-orange-end);
+
+      > div {
+        text-align: center;
+        color: white;
+        a, a:visited, a[href^="http"], a[href^="mailto"] {
+          color: white;
+          text-decoration: none;
+        }
+      }
+
+    }
+  }
+}
