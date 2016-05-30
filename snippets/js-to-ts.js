@@ -1,4 +1,4 @@
-Object.defineProperty(window, "myAppversion", {
+Object.defineProperty(window, "myAppVersion", {
   value: 'v0.1.0',
   readOnly: true
 });
