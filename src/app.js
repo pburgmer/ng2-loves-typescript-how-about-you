@@ -34,6 +34,10 @@
       'features/types/how-structural',
       'features/types/demo',
 
+      'summary-title',
+      'summary',
+      
+
       'end'
     ];
 
