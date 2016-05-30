@@ -1,0 +1,27 @@
+<div w11k-slide-master="regular">
+  <div w11k-slide-part-source="header">
+    Generics - Wie
+  </div>
+
+  <div w11k-slide-part-source="content">
+    <ul class="simple">
+      <li>Typ-Parameter an
+        <ul>
+          <li>Klassen und Intrfaces</li>
+          <li>Methoden / Funktionen</li>
+        </ul>
+      </li>
+      <li>Ko- und Kontra-Varianz werden nicht unterstützt</li>
+    </ul>
+    <!--@formatter:off-->
+<pre w11k-pretty-print lang="ts">
+interface Array&lt;T&gt; {
+  reverse(): T[];
+
+  map&lt;U&gt;(fun: (value: T) =&gt; U): U[];
+}
+</pre>
+    <!--@formatter:on-->
+  </div>
+
+</div>

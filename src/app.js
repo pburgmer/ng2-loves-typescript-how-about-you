@@ -8,7 +8,41 @@
 
       'intro/about-me',
       'intro/about-us',
-      
+
+      'intro/why-ts',
+      'intro/why-ts-errors',
+      'intro/why-ts-growing',
+      'intro/why-ts-next-today',
+
+      'intro/how-ts',
+      'intro/how-ts-superset',
+      'intro/how-ts-es6',
+      'intro/how-ts-hurdle',
+      'intro/es-to-ts',
+      'intro/es-to-ts-error',
+
+      'intro/ts-ng2',
+      'intro/ts-ng2-you',
+
+      'features/overview',
+
+      'features/types/title',
+      'features/types/why',
+      'features/types/why-not',
+      'features/types/why-2',
+      'features/types/how',
+      'features/types/how-structural',
+      'features/types/demo',
+
+      'features/generics/title',
+      'features/generics/why',
+      'features/generics/how',
+      'features/generics/demo',
+
+      'summary-title',
+      'summary',
+
+
       'end'
     ];
 
