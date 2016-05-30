@@ -39,6 +39,22 @@
       'features/generics/how',
       'features/generics/demo',
 
+      'features/modules/title',
+      'features/modules/why',
+      'features/modules/how',
+      'features/modules/how-2',
+      'features/modules/demo',
+
+      'features/tooling/title',
+      'features/tooling/why',
+      'features/tooling/how',
+      'features/tooling/how-tsconfig',
+
+      'features/decorators/title',
+      'features/decorators/why',
+      'features/decorators/how',
+      'features/decorators/demo',
+
       'summary-title',
       'summary',
 

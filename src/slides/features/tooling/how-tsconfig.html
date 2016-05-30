@@ -1,0 +1,32 @@
+<div w11k-slide-master="regular">
+  <div w11k-slide-part-source="header">
+    Tooling - Wie
+  </div>
+
+  <div w11k-slide-part-source="content">
+    <ul class="simple">
+      <li>Compiler Konfiguration
+        <ul>
+          <li>In <code>tsconfig.json</code> ausgelager</li>
+          <li>Verschiedene Tools können Compiler anstoßen</li>
+          <li>Immer gleiche Konfiguration</li>
+        </ul>
+      </li>
+    </ul>
+    <!--@formatter:off-->
+<pre w11k-pretty-print lang="json">
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "system",
+    "noImplicitAny": false,
+    "rootDir": "./src",
+    "outDir": "./target/tsc"
+  }
+}
+
+</pre>
+    <!--@formatter:on-->
+  </div>
+
+</div>
