@@ -24,6 +24,16 @@
       'intro/ts-ng2',
       'intro/ts-ng2-you',
 
+      'features/overview',
+
+      'features/types/title',
+      'features/types/why',
+      'features/types/why-not',
+      'features/types/why-2',
+      'features/types/how',
+      'features/types/how-structural',
+      'features/types/demo',
+
       'end'
     ];
 
