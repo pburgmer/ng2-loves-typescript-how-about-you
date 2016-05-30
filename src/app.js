@@ -34,9 +34,14 @@
       'features/types/how-structural',
       'features/types/demo',
 
+      'features/generics/title',
+      'features/generics/why',
+      'features/generics/how',
+      'features/generics/demo',
+
       'summary-title',
       'summary',
-      
+
 
       'end'
     ];
