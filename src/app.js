@@ -17,10 +17,12 @@
       'intro/how-ts',
       'intro/how-ts-superset',
       'intro/how-ts-es6',
-      'intro/how-ts-hurdle',
 
       'intro/ts-ng2',
       'intro/ts-ng2-you',
+
+      'intro/how-ts-hurdle',
+      'intro/hands-on-hello-world',
 
       'features/overview',
 
@@ -86,12 +88,6 @@
       'features/decorators/how',
       'features/decorators/20-decorators',
       'features/decorators/demo',
-
-      'features/tooling/title',
-      'features/tooling/why',
-      'features/tooling/how',
-      'features/tooling/how-tsconfig',
-
 
       'features/strict-null/title',
       'features/strict-null/strict-null-1',
