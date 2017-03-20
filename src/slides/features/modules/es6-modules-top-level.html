@@ -1,0 +1,35 @@
+<div w11k-slide-master="regular">
+  <span w11k-slide-part-source="header">
+    Top-Level-Module
+  </span>
+
+  <div w11k-slide-part-source="content">
+    <ul class="simple">
+      <li>Module sollten wenn möglich relativ geladen werden (eigener Code)
+        <!--@formatter:off-->
+<pre w11k-pretty-print lang="ts">
+import {arrowFun} from "./my-module";
+</pre>
+        <!--@formatter:on-->
+      </li>
+      <li>Module können auch absolut geladen werden (Top-level Module)
+        <!--@formatter:off-->
+<pre w11k-pretty-print lang="ts">
+import {_} from "lodash";
+</pre>
+        <!--@formatter:on-->
+        <ul>
+          <li>Externe Bibliotheken</li>
+          <li>Integration legacy Code</li>
+          <li>Nicht spezifiziert von wo geladen wird
+            <ul>
+              <li>muss konfiguriert werden</li>
+              <li>für gewöhnlich <code>node_modules</code></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+</div>

@@ -1,0 +1,33 @@
+<div w11k-slide-master="regular">
+  <div w11k-slide-part-source="header">
+    async/await
+  </div>
+
+  <div w11k-slide-part-source="content">
+    <ul class="simple">
+      <li>Asynchrone Programmierung ist schwierig
+        <ul>
+          <li>Stark verschachtelter Code</li>
+          <li>Oft schlecht lesbar</li>
+        </ul>
+      </li>
+      <li>Async/Await macht Code wieder flach!
+        <ul>
+          <li>ES Proposal</li>
+          <li>Leider nicht in ES2016, hoffentlich 2017</li>
+          <li>TypeScript unterstüzte schon für <code>target: "es6"</code></li>
+          <li>Ab 2.1 auch für ES3 und ES5</li>
+        </ul>
+      </li>
+    </ul>
+    <!--@formatter:off-->
+<pre w11k-pretty-print lang="ts">
+async function doSomething() {
+  await doSomethingAsync();
+  console.log("finished");
+}
+</pre>
+    <!--@formatter:on-->
+  </div>
+
+</div>

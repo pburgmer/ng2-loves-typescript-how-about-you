@@ -1,0 +1,28 @@
+<div w11k-slide-master="es6-feature">
+  <span w11k-slide-part-source="header">
+    Vererbung
+  </span>
+
+  <div w11k-slide-part-source="content">
+    <ul class="simple">
+      <li>Ermöglicht es, sich wiederholende Strukturen wiederzuverwenden</li>
+      <li>Klassen können ihre Eigenschaften vererben
+        <ul>
+          <li>Expliziter Zugriff auf Member der Basisklasse über <code>super</code></li>
+          <li>Super-Konstruktor muss explizit aufgerufen werden <code>super(arg1, arg2, ...)</code></li>
+          <li>Kein Überschreiben von Properties (Instanz), nur Methoden (Prototyp)</li>
+        </ul>
+      </li>
+    </ul>
+
+    <!--@formatter:off-->
+<pre w11k-pretty-print lang="ts">
+class Student extends CampusPerson {
+  constructor() { super(1); }
+  protected aMethod() { super.aMethod(); }
+}
+</pre>
+    <!--@formatter:on-->
+  </div>
+
+</div>

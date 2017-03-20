@@ -1,0 +1,31 @@
+<div w11k-slide-master="regular">
+  <div w11k-slide-part-source="header">
+    Null- and undefined-aware types
+  </div>
+
+  <div w11k-slide-part-source="content">
+    <ul class="simple">
+      <li><code>null</code>: The Billion Dollar Mistake</li>
+      <li>Compiler Flag <code>--strictNullChecks</code>
+        <ul>
+          <li>Typen <code>undefined</code> und <code>null</code></li>
+          <li>Andere Typen beinhalten Werte <code>null</code> und <code>undefined</code> nicht mehr
+            <!--@formatter:off-->
+<pre w11k-pretty-print lang="ts">
+let x: number = undefined // error
+</pre>
+            <!--@formatter:on-->
+          </li>
+          <li>Union Types
+          <!--@formatter:off-->
+          <pre w11k-pretty-print lang="ts">
+let x: number | undefined = undefined // ok
+</pre>
+          <!--@formatter:on-->
+        </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+</div>

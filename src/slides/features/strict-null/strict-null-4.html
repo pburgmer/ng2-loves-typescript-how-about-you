@@ -1,0 +1,20 @@
+<div w11k-slide-master="regular">
+  <div w11k-slide-part-source="header">
+    Null- and undefined-aware types
+  </div>
+
+  <div w11k-slide-part-source="content">
+    <!--@formatter:off-->
+<pre w11k-pretty-print lang="ts">
+var element = document.querySelector("foo");
+
+element.classList.add("bar"); // error: element can be null
+
+if (element !== null) {
+  element.classList.add("bar"); // ok
+}
+</pre>
+    <!--@formatter:on-->
+  </div>
+
+</div>

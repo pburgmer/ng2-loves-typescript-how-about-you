@@ -1,6 +1,6 @@
-# ng2 ❤ TypeScript - und du?
+# Alle ❤ TypeScript - und du?
 
-Dieses Repository enthält die Präsentation zu meinem Vortrag 'ng2 ❤ TypeScript - und du?'. Eine PDF-Datei mit den Folien zum Vortrag liegt unter ```etc/pdf```.
+Dieses Repository enthält die Präsentation zu meinem Vortrag 'Alle ❤ TypeScript - und du?'. Eine PDF-Datei mit den Folien zum Vortrag liegt unter ```etc/pdf```.
 
 ## Zusammenfassung
 

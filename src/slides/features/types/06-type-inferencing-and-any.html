@@ -1,0 +1,42 @@
+<div w11k-slide-master="ts-feature">
+  <div w11k-slide-part-source="header">
+    Type Inferencing & der Typ any
+  </div>
+
+  <div w11k-slide-part-source="content">
+    <ul class="simple">
+      <li>Typen können <i>explizit</i> angegeben werden
+        <!--@formatter:off-->
+<pre w11k-pretty-print lang="ts">
+var x: string = "Hello";
+name = 5; // COMPILE ERROR
+</pre>
+    <!--@formatter:on-->
+      </li>
+      <li>Oder <i>inferred</i> werden
+        <!--@formatter:off-->
+<pre w11k-pretty-print lang="ts">
+var x = "Hello"; // 'x' is of type string
+name = 5; // COMPILE ERROR
+</pre>
+    <!--@formatter:on-->
+      </li>
+    </ul>
+
+    <ul class="simple">
+      <li><b>any</b> Type
+        <!--@formatter:off-->
+<pre w11k-pretty-print lang="ts">
+var x: any = "Hello";
+name = 5; // OK
+</pre>
+<pre w11k-pretty-print lang="ts">
+// 'a' and 'b' are of type any
+function (a, b: any) {}
+</pre>
+    <!--@formatter:on-->
+      </li>
+    </ul>
+  </div>
+
+</div>

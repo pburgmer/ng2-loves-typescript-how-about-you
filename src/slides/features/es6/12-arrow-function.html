@@ -1,0 +1,38 @@
+<div w11k-slide-master="es6-feature">
+  <span w11k-slide-part-source="header">
+    Arrow Function
+  </span>
+
+  <div w11k-slide-part-source="content">
+    <ul class="simple">
+      <li>Kürzere Syntax
+        <ul>
+          <li><code>(a, b) => {...}</code> statt <code>function (a, b) {...}</code></li>
+          <li>Klammern () sind bei nur einem Parameter optional</li>
+          <li>Klammern <code>{}</code> und <code>return</code> sind optional, wenn <i>body</i> nur aus einem Statement besteht</li>
+        </ul>
+        <!--@formatter:off-->
+    <pre w11k-pretty-print lang="ts">
+let add = (a, b) => a + b;
+console.log(add(1, 2)); // 3
+</pre>
+    <!--@formatter:on-->
+      </li>
+      <li><code>this</code>-Capturing
+        <ul>
+          <li>Einsatzgebiet: Callbacks, Promise-Handler, ...</li>
+        </ul>
+        <!--@formatter:off-->
+    <pre w11k-pretty-print lang="ts">
+function Person() {
+  this.age = 0;
+  setInterval(() => { this.age++; }, 1000); // every second
+}
+</pre>
+    <!--@formatter:on-->
+      </li>
+    </ul>
+  </div>
+
+
+</div>

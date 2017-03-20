@@ -1,8 +1,4 @@
-@import "boxed-variables";
-
-// ****************************************************************************************************
-// font
-// ****************************************************************************************************
+@import "compass";
 
 @font-face {
   font-family: 'SourceCodePro';
@@ -41,13 +37,9 @@
   font-style: italic;
 }
 
-html, body, * {
-  font-family: 'Aller';
-}
-
-// ****************************************************************************************************
-// tcc-2016
-// ****************************************************************************************************
+  html, body, * {
+    font-family: 'Aller';
+  }
 
 
 .tcc-2016 .slides {
@@ -132,7 +124,7 @@ html, body, * {
       padding: 0;
       overflow: hidden;
 
-      background: $tcc-slide-title-background;
+      background: linear-gradient(to right, $tcc-gradient-orange-start, $tcc-gradient-orange-end);
 
       h1 {
         margin: 0;
@@ -158,11 +150,11 @@ html, body, * {
 
         .content {
           background-color: $tcc-gray;
-          background: $tcc-slide-title-center-background;
+          background: linear-gradient(to right, $tcc-gray, lighten($tcc-gray, 7%));
 
           transform: rotate(3deg);
-          padding: 8% 5%;
-          margin: -4.5% 0 -4.5%;
+          padding: 8vw 0;
+          margin: -4.5vw 0 -4.5vw;
         }
         h1, h1 small {
           color: white
@@ -220,7 +212,7 @@ html, body, * {
         margin-top: $header-height * -1;
         margin-bottom: $header-offset;
 
-        background: $tcc-regular-header-background;
+        background: linear-gradient(to right, $tcc-gradient-orange-start, $tcc-gradient-orange-end);
 
         display: flex;
         align-items: stretch;
@@ -231,7 +223,7 @@ html, body, * {
           margin-bottom: $header-offset * -1;
           padding-bottom: $header-offset;
 
-          background: url('assets/images/tcc-header-bg-gray.svg') right top no-repeat;
+          background: url('assets/images/tcc-header-bg-gray.svg') 96% top no-repeat;
           background-size: auto 100%;
           width: $slide-padding-horizontal + (($header-height) * 0.7967 * 0.5);
           padding-right: 35px;
@@ -351,7 +343,7 @@ html, body, * {
               position: absolute;
               content: "<>";
               font-weight: 200;
-              color: $tcc-orange;
+              color: $w11k-slides-color-1;
               margin-left: -1.4em;
             }
 
@@ -381,7 +373,7 @@ html, body, * {
                 &:before {
                   position: absolute;
                   content: '-';
-                  color: $tcc-orange;
+                  color: $w11k-slides-color-1;
                   margin-left: -0.8em;
                   padding-left: 0.1em;
                 }
@@ -457,7 +449,7 @@ html, body, * {
                 &:before {
                   position: absolute;
                   content: "<>";
-                  color: $tcc-orange;
+                  color: $w11k-slides-color-1;
                   margin-left: -0.4em;
                 }
               }
@@ -465,7 +457,7 @@ html, body, * {
               > li:last-of-type:not(.as-headline) {
                 &:after {
                   content: " </>";
-                  color: $tcc-orange;
+                  color: $w11k-slides-color-1;
                 }
               }
             }
@@ -476,6 +468,7 @@ html, body, * {
           @extend .table;
           @extend .table-striped;
           @extend .table-condensed;
+          @extend .table-bordered;
 
           margin-bottom: 0;
 
@@ -507,10 +500,10 @@ html, body, * {
           font-size: 1.5em;
           margin: 2em 10vw;
           padding: 0.3em 0 0.3em 1em;
-          border-left: 0.1em solid $tcc-quote-highlight;
+          border-left: 0.1em solid $tcc-gray-lighter;
 
           cite {
-            color: $tcc-quote-highlight;
+            color: $tcc-gray-lighter;
             font-size: 0.666em;
           }
         }
@@ -522,7 +515,7 @@ html, body, * {
         flex: none;
 
         height: 32px;
-        background: $tcc-regular-footer-background;
+        background: linear-gradient(to right, $tcc-gradient-orange-start, $tcc-gradient-orange-end);
 
         display: flex;
         align-items: stretch;

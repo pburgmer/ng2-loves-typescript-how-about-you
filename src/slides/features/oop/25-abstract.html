@@ -1,0 +1,26 @@
+<div w11k-slide-master="ts-feature">
+  <span w11k-slide-part-source="header">
+    Abstract
+  </span>
+
+  <div w11k-slide-part-source="content">
+    <ul class="simple">
+      <li>Schlüsselwort <code>abstract</code> an Klasse verhindert Instanziierung</li>
+      <li>Methoden können mit <code>abstract</code> markiert werden -&gt;<br>
+        erbende Klassen muss diese implementieren oder ebenfalls <code>abstract</code> sein
+      </li>
+      <li>Unterschied zu Interfaces: erzeugen ES Code</li>
+    </ul>
+
+    <!--@formatter:off-->
+<pre w11k-pretty-print lang="ts">
+abstract class CampusPerson {
+  abstract morgendsAmCampus();
+}
+
+let cp = new CampusPerson(); // COMPILE ERROR
+</pre>
+    <!--@formatter:on-->
+  </div>
+
+</div>

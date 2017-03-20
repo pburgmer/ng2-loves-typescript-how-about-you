@@ -1,0 +1,29 @@
+<div w11k-slide-master="regular">
+  <div w11k-slide-part-source="header">
+    async/await
+  </div>
+
+  <div w11k-slide-part-source="content">
+
+    <!--@formatter:off-->
+<pre w11k-pretty-print lang="ts">
+function check() {
+  return new Promise&lt;boolean&gt;(resolve =&gt; resolve(false));
+}
+
+function doNotGiveIn() {
+  return new Promise&lt;void&gt;(resolve =&gt; { console.log(&quot;Do it now!&quot;); resolve(); });
+}
+
+async function askForCleanup() {
+  console.log(&quot;Please clean up your room&quot;);
+  while(await !check()) { await doNotGiveIn(); }
+  console.log(&quot;Thanks!&quot;);
+}
+
+askForCleanup();
+</pre>
+    <!--@formatter:on-->
+  </div>
+
+</div>

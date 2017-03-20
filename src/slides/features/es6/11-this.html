@@ -1,0 +1,35 @@
+<div w11k-slide-master="regular">
+  <span w11k-slide-part-source="header">
+    this innerhalb von Funktionen
+  </span>
+
+  <div w11k-slide-part-source="content">
+    <ul class="simple">
+      <li>Gegeben sei folgender Code:
+        <!--@formatter:off-->
+<pre w11k-pretty-print lang="ts">
+function Person() {
+  this.age = 0;
+
+  setInterval(function () {
+    this.age++;
+  }, 1000); // every second
+}
+</pre>
+        <!--@formatter:on-->
+      </li>
+      <li>Wie ist die Ausgabe bei folgendem Code?
+        <!--@formatter:off-->
+<pre w11k-pretty-print lang="ts">
+var p = new Person();
+setInterval(function () {
+  console.log(p.age);
+}, 10000); // every 10 seconds
+</pre>
+        <!--@formatter:on-->
+      </li>
+    </ul>
+  </div>
+
+
+</div>

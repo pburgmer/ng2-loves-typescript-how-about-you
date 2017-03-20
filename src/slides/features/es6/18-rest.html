@@ -1,0 +1,34 @@
+<div w11k-slide-master="es6-feature">
+  <span w11k-slide-part-source="header">
+    Rest Parameters
+  </span>
+
+  <div w11k-slide-part-source="content">
+    <ul class="simple">
+      <li>Einsatzgebiet: Variable Parameterlisten
+        <ul>
+          <li>Statt <code>arguments</code> Variable</li>
+        </ul>
+      </li>
+      <li>Argumente als echtes Array entgegennehmen
+        <ul>
+          <li>Impliziter Type <code>any[]</code></li>
+          <li>Explizit angeben z.B. <code>number[]</code></li>
+        </ul>
+      </li>
+    </ul>
+
+    <!--@formatter:off-->
+<pre w11k-pretty-print lang="ts">
+function fn(a, b, ...derRest) {
+  console.log(derRest);
+}
+
+fn(1, 2); // []
+fn(1, 2, 3); // [3]
+fn(1, 2, 3, 4); // [3, 4]
+</pre>
+    <!--@formatter:on-->
+  </div>
+
+</div>
