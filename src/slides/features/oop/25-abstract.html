@@ -6,10 +6,12 @@
   <div w11k-slide-part-source="content">
     <ul class="simple">
       <li>Schlüsselwort <code>abstract</code> an Klasse verhindert Instanziierung</li>
-      <li>Methoden können mit <code>abstract</code> markiert werden -&gt;<br>
-        erbende Klassen muss diese implementieren oder ebenfalls <code>abstract</code> sein
+      <li>Methoden können <code>abstract</code> sein
+        <ul>
+          <li>Haben keinen Body</li>
+          <li>Erbende Klassen muss implementieren oder <code>abstract</code> sein</li>
+        </ul>
       </li>
-      <li>Unterschied zu Interfaces: erzeugen ES Code</li>
     </ul>
 
     <!--@formatter:off-->
@@ -21,6 +23,11 @@ abstract class CampusPerson {
 let cp = new CampusPerson(); // COMPILE ERROR
 </pre>
     <!--@formatter:on-->
+
+    <ul class="simple">
+      <li>Unterschied zu Interfaces: erzeugen ES Code</li>
+      <li>Pro-Tip: Klassen können als Interface verwendet werden</li>
+    </ul>
   </div>
 
 </div>

@@ -8,19 +8,20 @@
       <li>Kürzere Syntax
         <ul>
           <li><code>(a, b) => {...}</code> statt <code>function (a, b) {...}</code></li>
-          <li>Klammern () sind bei nur einem Parameter optional</li>
-          <li>Klammern <code>{}</code> und <code>return</code> sind optional, wenn <i>body</i> nur aus einem Statement besteht</li>
+          <li><code>()</code>, <code>{}</code> und <code>return</code> ggf. optional</li>
         </ul>
         <!--@formatter:off-->
     <pre w11k-pretty-print lang="ts">
-let add = (a, b) => a + b;
-console.log(add(1, 2)); // 3
+let powerOfTwo = a => 2 ** a; // (a: number) => { return 2 ** a; }
+console.log(powerOfTwo(3)); // 8
 </pre>
     <!--@formatter:on-->
       </li>
       <li><code>this</code>-Capturing
         <ul>
-          <li>Einsatzgebiet: Callbacks, Promise-Handler, ...</li>
+          <li><code>this</code> des Definitionskontext wird übernommen</li>
+          <li>Aufrufer hat keine Kontrolle über <code>this</code> innerhalb der Funktion</li>
+          <li>Einsatzgebiet: Lamdas (Callbacks, Handler, ...)</li>
         </ul>
         <!--@formatter:off-->
     <pre w11k-pretty-print lang="ts">

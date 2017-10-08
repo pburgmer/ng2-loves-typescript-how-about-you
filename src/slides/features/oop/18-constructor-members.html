@@ -9,9 +9,11 @@
         <!--@formatter:off-->
 <pre w11k-pretty-print lang="ts">
 class Student {
-  _name: string;
-  constructor(name: string, mnr: number) {
-    this._name = name;
+  name: string;
+  matr: number
+  constructor(name: string, matr: number) {
+    this.name = name;
+    this.matr = matr;
   }
 }
 </pre>
@@ -21,8 +23,8 @@ class Student {
 
         <!--@formatter:off-->
 <pre w11k-pretty-print lang="ts">
-class MyClass {
-  constructor(public wertA: string, private wertB: number) {}
+class Student {
+  constructor(public name: string, private matr: number) {}
 }
 </pre>
         <!--@formatter:on-->

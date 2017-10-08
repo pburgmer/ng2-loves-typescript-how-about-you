@@ -7,12 +7,14 @@
     <ul class="simple">
       <li>Interfaces können Variablen und Methoden definieren</li>
       <li>Methoden immer ohne Implementierung</li>
+      <li>Member können optional sein</li>
     </ul>
 
     <!--@formatter:off-->
 <pre w11k-pretty-print lang="ts">
 interface HasAge {
-  birthDate: Date;
+  birth: Date;
+  death?: Date;
   getAge(): number;
 }
 </pre>

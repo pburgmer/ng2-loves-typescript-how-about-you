@@ -5,28 +5,26 @@
 
   <div w11k-slide-part-source="content">
     <ul class="simple">
-      <li>Module sollten wenn möglich relativ geladen werden (eigener Code)
+      <li>Module können relativ geladen werden
+        <ul>
+          <li>Empfohlen für Code innerhalb eines Projekts</li>
+        </ul>
         <!--@formatter:off-->
 <pre w11k-pretty-print lang="ts">
 import {arrowFun} from "./my-module";
 </pre>
         <!--@formatter:on-->
       </li>
-      <li>Module können auch absolut geladen werden (Top-level Module)
+      <li>Module können auch absolut geladen werden
         <!--@formatter:off-->
 <pre w11k-pretty-print lang="ts">
-import {_} from "lodash";
+import {uniq} from "lodash";
 </pre>
         <!--@formatter:on-->
         <ul>
-          <li>Externe Bibliotheken</li>
-          <li>Integration legacy Code</li>
-          <li>Nicht spezifiziert von wo geladen wird
-            <ul>
-              <li>muss konfiguriert werden</li>
-              <li>für gewöhnlich <code>node_modules</code></li>
-            </ul>
-          </li>
+          <li>Gut für externe Bibliotheken</li>
+          <li>Nicht standardisiert von wo geladen wird</li>
+          <li>Defacto Standard: <code>node_modules</code></li>
         </ul>
       </li>
     </ul>

@@ -4,31 +4,31 @@
   </span>
 
   <div w11k-slide-part-source="content">
+    <!--@formatter:off-->
+<pre w11k-pretty-print lang="ts">
+class MyClass {
+  aMember: number = 123;
+  aMethod(param: string): void {
+    console.log(this.aMember, param);
+  }
+}
+let anInstance: MyClass = new MyClass();
+</pre>
+    <!--@formatter:on-->
+
     <ul class="simple">
-      <li>Klassen kombinieren Schnittstelle und deren Implementierung</li>
-      <li>Zugriff untereinander auf <i>Member-Variablen</i> mittels <code>this</code></li>
+      <li>Zugriff auf <i>Member-Variablen</i> immer über explizites <code>this</code></li>
       <li>KEIN automatisches <code>this</code>-Capturing für Methoden
         <ul>
           <li>Methoden hängen am Prototype</li>
           <li>Ansonsten müssten es Instanz-Variablen sein (schlechtere Performance)</li>
         </ul>
       </li>
-      <li>Klassen ES6-Feature, Typisierung über Klassen TS-Feature</li>
+      <li>Klassen sind ES6-Feature</li>
+      <li>Typisierung über Klassen ist TS-Feature</li>
     </ul>
 
 
-    <!--@formatter:off-->
-<pre w11k-pretty-print lang="ts">
-class MyClass {
-  aMember: number = 123;
-  aMethod(param: string): string {
-    console.log(this.aMember); // 123
-    return param.toUpperCase();
-  }
-}
-let anInstance = new MyClass();
-</pre>
-    <!--@formatter:on-->
   </div>
 
 </div>

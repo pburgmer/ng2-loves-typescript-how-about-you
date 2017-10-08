@@ -12,17 +12,20 @@
           <li>Klassen, Module, Typen, ...</li>
         </ul>
       </li>
-      <li>TypeScript Compiler vorausgesetzt
+      <li>TypeScript Code muss übersetzt werden
         <ul>
-          <li>Muss in Tooling-Pipeline integriert werden</li>
+          <li>Compiler muss in Tooling-Pipeline integriert werden</li>
         </ul>
-<pre>
-npm install typescript -g
-tsc hello-world.ts
-node hello-world.js
-</pre>
       </li>
     </ul>
+    <!--@formatter:off-->
+    <pre w11k-pretty-print lang="ts">
+npm init
+npm install typescript --save-dev
+./node_modules/.bin/tsc hello-world.ts
+node hello-world.js
+</pre>
+    <!--@formatter:on-->
   </div>
 
 </div>

@@ -5,31 +5,29 @@
 
   <div w11k-slide-part-source="content">
     <ul class="simple">
-      <li>Interfaces und Klassen können sinnvoll kombiniert werden</li>
-      <li>Interfaces definieren Schnittstellen und fördern die Wiederverwendbarkeit
+      <li>Werte werden bei Zuweisung per <i>Structural Typing</i> verglichen
         <!--@formatter:off-->
 <pre w11k-pretty-print lang="ts">
 interface Labelled {
     getLabel(): string;
 }
-</pre>
-        <!--@formatter:on-->
-      </li>
-      <li>Klassen und Objekte werden per <code>structural typing</code> mit Interfaces verglichen
-        <!--@formatter:off-->
-<pre w11k-pretty-print lang="ts">
 let withLabel: Labelled = new Student("Max", 123456);
 </pre>
         <!--@formatter:on-->
       </li>
-      <li>Klassen können Interfaces <i>explizit implementieren</i>
+      <li>Klassen müssen Interfaces nicht explizit implementieren
+        <ul>
+          <li>Vorteil: Schnittstellen für fremde Klassen definieren</li>
+        </ul>
+      </li>
+      <li>Klassen können Interfaces explizit implementieren
         <!--@formatter:off-->
 <pre w11k-pretty-print lang="ts">
 class Student implements Labelled {}
 </pre>
         <!--@formatter:on-->
         <ul>
-          <li>Schon bei Erstellung sichergestellt, dass Klasse <i>strukturell</i> zu Interface kompatibel</li>
+          <li>Kompabilität schon an Klasse sicherstellen</li>
         </ul>
       </li>
     </ul>

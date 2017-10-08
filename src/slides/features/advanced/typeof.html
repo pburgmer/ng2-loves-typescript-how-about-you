@@ -1,0 +1,32 @@
+<div w11k-slide-master="ts-feature">
+  <span w11k-slide-part-source="header">
+    Type Alias mit typeof
+  </span>
+
+  <div w11k-slide-part-source="content">
+    <ul class="simple">
+      <li>Typ eines Wertes kann explizit als Typ definiert werden
+        <!--@formatter:off-->
+<pre w11k-pretty-print lang="ts">
+const defaultConfig = {
+  foo: false,
+  bar: 3
+};
+type Config = typeof defaultConfig;
+</pre>
+        <!--@formatter:on-->
+      </li>
+      <li>Kann mit Union-Types kombiniert werden
+        <!--@formatter:off-->
+        <pre w11k-pretty-print lang="ts">
+const myConfig: Config = {}; // error: foo and bar missing
+const myPartialConfig: Partial&lt;Config&gt; = {};
+
+function setConfig(config: Config | Partial&lt;Config&gt;) {}
+</pre>
+        <!--@formatter:on-->
+      </li>
+    </ul>
+  </div>
+
+</div>
