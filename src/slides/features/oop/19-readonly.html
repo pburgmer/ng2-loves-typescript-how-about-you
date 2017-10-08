@@ -1,0 +1,23 @@
+<div w11k-slide-master="ts-feature">
+  <span w11k-slide-part-source="header">
+    Readonly Member
+  </span>
+
+  <div w11k-slide-part-source="content">
+    <ul class="simple">
+      <li>Instanzvariablen können über <code>readonly</code> unveränderbar gemacht werden</li>
+      <li>Müssen direkt oder im Konstruktor gesetzt werden</li>
+    </ul>
+    <!--@formatter:off-->
+<pre w11k-pretty-print lang="ts">
+class Student {
+  public readonly id: number
+  constructor(public readonly name: string, private matr: number) {
+    this.id = 42;
+  }
+}
+</pre>
+    <!--@formatter:on-->
+  </div>
+
+</div>

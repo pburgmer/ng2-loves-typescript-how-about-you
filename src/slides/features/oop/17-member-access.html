@@ -1,0 +1,26 @@
+<div w11k-slide-master="ts-feature">
+  <span w11k-slide-part-source="header">
+    Access Modifier
+  </span>
+
+  <div w11k-slide-part-source="content">
+    <ul class="simple">
+      <li>Zugriff von "außen" auf Klassen-Eigenschaften kann eingeschränkt werden</li>
+      <li><code>public</code>, <code>private</code> und <code>protected</code></li>
+      <li>Default: <code>public</code></li>
+      <li>Reines TypeScript Feature, in JS immer alles <code>public</code></li>
+    </ul>
+
+
+    <!--@formatter:off-->
+<pre w11k-pretty-print lang="ts">
+class {
+  private aMember = 123; // default: public
+
+  private aMethod(): {}
+}
+</pre>
+    <!--@formatter:on-->
+  </div>
+
+</div>

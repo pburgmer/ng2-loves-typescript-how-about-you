@@ -1,0 +1,25 @@
+<div w11k-slide-master="ts-feature">
+  <span w11k-slide-part-source="header">
+    keyof
+  </span>
+
+  <div w11k-slide-part-source="content">
+    <ul class="simple">
+      <li>Szenario
+        <ul>
+          <li>Funktion erwartet Name von Property als Parameter</li>
+          <li>Wie sicherstellen, dass nur gültige Werte kommen?</li>
+        </ul>
+      </li>
+      <li><code>keyof</code> erzeugt Union-Type aller Property-Namen (String-Literal-Type)</li>
+    </ul>
+        <!--@formatter:off-->
+<pre w11k-pretty-print lang="ts">
+function sortBy&lt;T&gt;(t: T[], prop: keyof T): T[] {
+  // sort and return sorted array
+}
+</pre>
+        <!--@formatter:on-->
+  </div>
+
+</div>

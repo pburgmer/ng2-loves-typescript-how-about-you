@@ -1,0 +1,28 @@
+<div w11k-slide-master="ts-feature">
+  <span w11k-slide-part-source="header">
+    Union Types
+  </span>
+
+  <div w11k-slide-part-source="content">
+    <ul class="simple">
+      <li><i>Union Types</i> sind die Vereinigung von 2 Typen
+        <ul>
+          <li>Werden in der Typ Signatur über <code>|</code> verbunden</li>
+          <li>Zuweisbar: beide Typen</li>
+          <li>Aufrufbar: was in beiden Typen gleich definiert ist</li>
+        </ul>
+      </li>
+    </ul>
+
+    <!--@formatter:off-->
+<pre w11k-pretty-print lang="ts">
+let campusPerson: Student | Professor;
+
+campusPerson = new Student("Max", 123456); // OK
+campusPerson = new Professor("Hugo"); // OK
+campusPerson = new PostDoc("Seb"); // Fehler
+</pre>
+    <!--@formatter:on-->
+  </div>
+
+</div>

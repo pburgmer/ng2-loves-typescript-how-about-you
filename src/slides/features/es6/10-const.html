@@ -1,0 +1,23 @@
+<div w11k-slide-master="es6-feature">
+  <span w11k-slide-part-source="header">
+    Konstanten mit Const
+  </span>
+
+  <div w11k-slide-part-source="content">
+    <ul class="simple">
+      <li>Schlüsselwort <code>const</code> markiert Variablen als unveränderbar</li>
+      <li><i>block scoped</i> wie bei <code>let</code></li>
+    </ul>
+
+    <!--@formatter:off-->
+<pre w11k-pretty-print lang="ts">
+const x = { a: 1 };
+x = { a: 2 }; // COMPILE ERROR
+x.a = 2 // ok
+
+console.log(x);
+</pre>
+    <!--@formatter:on-->
+  </div>
+
+</div>

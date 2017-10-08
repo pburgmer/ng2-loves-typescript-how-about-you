@@ -1,0 +1,27 @@
+<div w11k-slide-master="es6-feature">
+  <span w11k-slide-part-source="header">
+    for .. of Schleife
+  </span>
+
+  <div w11k-slide-part-source="content">
+    <ul class="simple">
+      <li>for .. of verhält sich wie erwartet
+        <!--@formatter:off-->
+<pre w11k-pretty-print lang="ts">
+for (let i of list) {
+    console.log(i);
+}
+// output: 1, 2, 3
+</pre>
+        <!--@formatter:on-->
+        <ul>
+          <li>Iteriert über Iteratable (Array, Map, Set, NodeList, ...)</li>
+          <li>Garantiert Reihenfolge</li>
+          <li>Value statt Key in Schleifenvariable <code>i</code></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+
+</div>

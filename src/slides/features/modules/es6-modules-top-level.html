@@ -1,0 +1,33 @@
+<div w11k-slide-master="regular">
+  <span w11k-slide-part-source="header">
+    Top-Level-Module
+  </span>
+
+  <div w11k-slide-part-source="content">
+    <ul class="simple">
+      <li>Module können relativ geladen werden
+        <ul>
+          <li>Empfohlen für Code innerhalb eines Projekts</li>
+        </ul>
+        <!--@formatter:off-->
+<pre w11k-pretty-print lang="ts">
+import {arrowFun} from "./my-module";
+</pre>
+        <!--@formatter:on-->
+      </li>
+      <li>Module können auch absolut geladen werden
+        <!--@formatter:off-->
+<pre w11k-pretty-print lang="ts">
+import {uniq} from "lodash";
+</pre>
+        <!--@formatter:on-->
+        <ul>
+          <li>Gut für externe Bibliotheken</li>
+          <li>Nicht standardisiert von wo geladen wird</li>
+          <li>Defacto Standard: <code>node_modules</code></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+</div>

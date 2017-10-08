@@ -1,0 +1,29 @@
+<div w11k-slide-master="regular">
+  <div w11k-slide-part-source="header">
+    Das Problem mit var
+  </div>
+
+  <div w11k-slide-part-source="content">
+    <ul class="simple">
+      <li>Welche Werte hat <code>a</code> und <code>b</code>?
+      </li>
+    </ul>
+
+    <!--@formatter:off-->
+<pre w11k-pretty-print lang="ts">
+var a = 1;
+var b = 2;
+
+if (true) {
+  var a = 98;
+  b = 99;
+}
+
+console.log(a);
+console.log(b);
+</pre>
+    <!--@formatter:on-->
+  </div>
+
+
+</div>

@@ -1,0 +1,39 @@
+<div w11k-slide-master="es6-feature">
+  <span w11k-slide-part-source="header">
+    Arrow Function
+  </span>
+
+  <div w11k-slide-part-source="content">
+    <ul class="simple">
+      <li>Kürzere Syntax
+        <ul>
+          <li><code>(a, b) => {...}</code> statt <code>function (a, b) {...}</code></li>
+          <li><code>()</code>, <code>{}</code> und <code>return</code> ggf. optional</li>
+        </ul>
+        <!--@formatter:off-->
+    <pre w11k-pretty-print lang="ts">
+let powerOfTwo = a => 2 ** a; // (a: number) => { return 2 ** a; }
+console.log(powerOfTwo(3)); // 8
+</pre>
+    <!--@formatter:on-->
+      </li>
+      <li><code>this</code>-Capturing
+        <ul>
+          <li><code>this</code> des Definitionskontext wird übernommen</li>
+          <li>Aufrufer hat keine Kontrolle über <code>this</code> innerhalb der Funktion</li>
+          <li>Einsatzgebiet: Lamdas (Callbacks, Handler, ...)</li>
+        </ul>
+        <!--@formatter:off-->
+    <pre w11k-pretty-print lang="ts">
+function Person() {
+  this.age = 0;
+  setInterval(() => { this.age++; }, 1000); // every second
+}
+</pre>
+    <!--@formatter:on-->
+      </li>
+    </ul>
+  </div>
+
+
+</div>

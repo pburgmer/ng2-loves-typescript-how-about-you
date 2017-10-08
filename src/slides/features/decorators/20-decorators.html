@@ -1,0 +1,33 @@
+<div w11k-slide-master="regular">
+  <span w11k-slide-part-source="header">
+    Decorators
+  </span>
+
+  <div w11k-slide-part-source="content">
+    <ul class="simple">
+      <li>Können verwendet werden an
+        <ul>
+          <li>Klassen (Konstruktor)</li>
+          <li>Properties & Methoden</li>
+          <li>Parametern</li>
+        </ul>
+      </li>
+      <li>Müssen immer (auch ohne Parameter) aufrufende Klammern haben <code>()</code></li>
+    </ul>
+
+    <!--@formatter:off-->
+<pre w11k-pretty-print lang="ts">
+@Freezed()
+class Person {
+
+  constructor(@NotUndefined() private name:string) {}
+
+  @LogCall("warn")
+  greet() { console.log(`Hello, I'm ${this.name}`); }
+}
+</pre>
+    <!--@formatter:on-->
+  </div>
+
+
+</div>

@@ -1,0 +1,23 @@
+<div w11k-slide-master="ts-feature">
+  <div w11k-slide-part-source="header">
+    Der Typ any
+  </div>
+
+  <div w11k-slide-part-source="content">
+    <ul class="simple">
+      <li>Fallback zu ES Verhalten über <i>any</i>
+        <ul>
+          <li>Alles kann zugewiesen werden</li>
+          <li>Variable kann für alles eingesetzt werden</li>
+        </ul>
+        <!--@formatter:off-->
+<pre w11k-pretty-print lang="ts">
+var x: any = "Hello";
+x = 5; // OK
+var foo: boolean = x; // OK
+</pre>
+      </li>
+    </ul>
+  </div>
+
+</div>

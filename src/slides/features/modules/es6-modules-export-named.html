@@ -1,0 +1,30 @@
+<div w11k-slide-master="regular">
+  <span w11k-slide-part-source="header">
+    Named Export
+  </span>
+
+  <div w11k-slide-part-source="content">
+    <ul class="simple">
+      <li>Top-Level Variablen können exportiert werden</li>
+      <li>Stehen unter ihrem Namen zur Verfügung</li>
+    </ul>
+
+    <!--@formatter:off-->
+<pre w11k-pretty-print lang="ts">
+// my-module.ts
+let x = 2; // not visible outside
+
+export let aNumber = 1;
+export let arrowFun = () => { };
+export function fatFun() {
+    // ...
+};
+
+export class MyClass {
+    // ...
+}
+</pre>
+    <!--@formatter:on-->
+  </div>
+
+</div>

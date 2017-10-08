@@ -1,0 +1,27 @@
+<div w11k-slide-master="ts-feature">
+  <div w11k-slide-part-source="header">
+    Type Inferencing
+  </div>
+
+  <div w11k-slide-part-source="content">
+    <ul class="simple">
+      <li>Typen können <i>explizit</i> angegeben werden
+        <!--@formatter:off-->
+<pre w11k-pretty-print lang="ts">
+var x: string = "Hello";
+x = 5; // COMPILE ERROR
+</pre>
+    <!--@formatter:on-->
+      </li>
+      <li>Oder <i>inferred</i> werden
+        <!--@formatter:off-->
+<pre w11k-pretty-print lang="ts">
+var x = "Hello"; // 'x' is of type string
+x = 5; // COMPILE ERROR
+</pre>
+    <!--@formatter:on-->
+      </li>
+    </ul>
+  </div>
+
+</div>

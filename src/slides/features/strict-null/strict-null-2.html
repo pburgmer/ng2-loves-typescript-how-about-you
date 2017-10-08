@@ -1,0 +1,23 @@
+<div w11k-slide-master="regular">
+  <div w11k-slide-part-source="header">
+    Null- and undefined-aware types
+  </div>
+
+  <div w11k-slide-part-source="content">
+    <ul class="simple">
+      <li>Ermöglicht zusätzliche Checks</li>
+    </ul>
+    <!--@formatter:off-->
+    <pre w11k-pretty-print lang="ts">
+let x: number;
+x;  // Error, reference not preceded by assignment
+x = 1;
+x; // Ok
+
+let z: number | undefined;
+z;  // Ok
+</pre>
+    <!--@formatter:on-->
+  </div>
+
+</div>

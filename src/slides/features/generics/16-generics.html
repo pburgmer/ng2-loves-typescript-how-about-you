@@ -1,0 +1,35 @@
+<div w11k-slide-master="ts-feature">
+  <span w11k-slide-part-source="header">
+    Generics - Wie
+  </span>
+
+  <div w11k-slide-part-source="content">
+    <ul class="simple">
+      <li>Typ-Parameter an Klasse/Interface und Methode
+        <!--@formatter:off-->
+<pre w11k-pretty-print lang="ts">
+interface Array&lt;T&gt; {
+  reverse(): T[];
+
+  sort(compareFn?: (a: T, b: T) =&gt; number): T[];
+
+  map&lt;U&gt;(
+    func: (value: T, index?: number, array?: T[]) =&gt; U
+  ): U[];
+}
+</pre>
+        <!--@formatter:on-->
+      </li>
+      <li><i>Type Constraints</i> werden unterstützt
+        <!--@formatter:off-->
+<pre w11k-pretty-print lang="ts">
+interface MyRestrictedCollection&lt;T extends Something&gt; {}
+</pre>
+        <!--@formatter:on-->
+      </li>
+      <li>Ko- und Kontra-Varianz werden nicht unterstützt</li>
+    </ul>
+
+  </div>
+
+</div>

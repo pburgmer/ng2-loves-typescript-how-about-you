@@ -1,0 +1,25 @@
+<div w11k-slide-master="regular">
+  <span w11k-slide-part-source="header">
+    Re-Export
+  </span>
+
+  <div w11k-slide-part-source="content">
+    <ul class="simple">
+      <li>Statt import + export Statement kombinierte Schreibweise
+        <!--@formatter:off-->
+<pre w11k-pretty-print lang="ts">
+export {fatFun, MyClass} from "./my-structure/my-module";
+</pre>
+        <!--@formatter:on-->
+      </li>
+      <li>Bietet Möglichkeit <b>ein</b> Modul nach außen anzubieten
+        <ul>
+          <li>Interne Struktur von Sub-Modulen verstecken</li>
+          <li>Meist über <code>index.ts</code></li>
+          <li>Gut für Bibliotheken</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+</div>

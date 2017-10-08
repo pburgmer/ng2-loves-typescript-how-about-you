@@ -1,0 +1,24 @@
+<div w11k-slide-master="ts-feature">
+  <span w11k-slide-part-source="header">
+    Union Types
+  </span>
+
+  <div w11k-slide-part-source="content">
+    <ul class="simple">
+      <li>Praktischer Nutzen: Methoden überladen</li>
+      <li>Eine Methode nimmt z.B. <code>string | string[]</code> entgegen</li>
+      <li>Innerhalb der Methode Typ-Prüfung</li>
+    </ul>
+
+    <!--@formatter:off-->
+<pre w11k-pretty-print lang="ts">
+doSomething(param: string | string[]) {
+  if (Array.isArray(param)) {}
+  else {}
+}
+</pre>
+    <!--@formatter:on-->
+
+  </div>
+
+</div>

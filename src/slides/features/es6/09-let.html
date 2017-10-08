@@ -1,0 +1,30 @@
+<div w11k-slide-master="es6-feature">
+  <div w11k-slide-part-source="header">
+    Block Scoping mit Let
+  </div>
+
+  <div w11k-slide-part-source="content">
+    <ul class="simple">
+      <li>Variablen mit Schlüsselwort <code>var</code> sind in EcmaScript <i>function scoped</i></li>
+      <li>Schlüsselwort <code>let</code> statt <code>var</code> sorgt für <i>block scope</i>
+      </li>
+    </ul>
+
+    <!--@formatter:off-->
+<pre w11k-pretty-print lang="ts">
+let a = 1;
+let b = 2;
+
+if (true) {
+  let a = 98;
+  b = 99;
+}
+
+console.log(a);
+console.log(b);
+</pre>
+    <!--@formatter:on-->
+  </div>
+
+
+</div>

@@ -1,0 +1,31 @@
+<div w11k-slide-master="regular">
+  <div w11k-slide-part-source="header">
+    async / await
+  </div>
+
+  <div w11k-slide-part-source="content">
+    <ul class="simple">
+      <li>Asynchrone Programmierung ist schwierig
+        <ul>
+          <li>Stark verschachtelter Code</li>
+          <li>Oft schlecht lesbar</li>
+        </ul>
+      </li>
+      <li>Async/Await macht Code wieder flach!
+        <ul>
+          <li>Teil von ES2017</li>
+          <li>Ab TypeScript 2.1 auch für ältere ES Versionen</li>
+        </ul>
+      </li>
+    </ul>
+    <!--@formatter:off-->
+<pre w11k-pretty-print lang="ts">
+async function doSomething() {
+  await doSomethingAsync();
+  console.log("finished");
+}
+</pre>
+    <!--@formatter:on-->
+  </div>
+
+</div>

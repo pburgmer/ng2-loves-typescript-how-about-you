@@ -1,0 +1,28 @@
+<div w11k-slide-master="ts-feature">
+  <span w11k-slide-part-source="header">
+    Optional Parameters
+  </span>
+
+  <div w11k-slide-part-source="content">
+    <ul class="simple">
+      <li>Kein Überladen von Funktionen / Methoden in EcmaScript</li>
+      <li>Parameter sind daher oft optional
+        <ul>
+          <li>Mit <code>?</code> als <i>optional</i> kennzeichnen (Wert: <code>undefined</code>)</li>
+          <li>Mit <code>=</code> einen Standard-Wert zuweisen</li>
+        </ul>
+      </li>
+    </ul>
+
+    <!--@formatter:off-->
+<pre w11k-pretty-print lang="ts">
+function withOptionalParams(regular, optional?, defaultValue = 1) {
+  console.log(regular, optional, defaultValue);
+}
+
+withOptionalParams(0);
+</pre>
+    <!--@formatter:on-->
+  </div>
+
+</div>

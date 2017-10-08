@@ -1,0 +1,29 @@
+<div w11k-slide-master="ts-feature">
+  <span w11k-slide-part-source="header">
+    Literal Types
+  </span>
+
+  <div w11k-slide-part-source="content">
+    <ul class="simple">
+      <li>Primitive Wert-Literale können als Typen verwendet werden
+        <!--@formatter:off-->
+<pre w11k-pretty-print lang="ts">
+let foo: 1; // type: 1, value: undefined
+foo = 1; // ok
+foo = 2; // error
+</pre>
+        <!--@formatter:on-->
+      </li>
+      <li>Kann mit Union-Types kombiniert werden
+        <!--@formatter:off-->
+        <pre w11k-pretty-print lang="ts">
+let unit: "px" | "em" | "%";
+unit = "px"; // ok
+unit = "cm"; // error
+</pre>
+        <!--@formatter:on-->
+      </li>
+    </ul>
+  </div>
+
+</div>

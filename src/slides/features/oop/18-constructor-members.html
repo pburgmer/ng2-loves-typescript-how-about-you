@@ -1,0 +1,35 @@
+<div w11k-slide-master="ts-feature">
+  <span w11k-slide-part-source="header">
+    Konstruktoren &amp; Member-Variablen
+  </span>
+
+  <div w11k-slide-part-source="content">
+    <ul class="simple">
+      <li>Gängiger Code
+        <!--@formatter:off-->
+<pre w11k-pretty-print lang="ts">
+class Student {
+  name: string;
+  matr: number
+  constructor(name: string, matr: number) {
+    this.name = name;
+    this.matr = matr;
+  }
+}
+</pre>
+        <!--@formatter:on-->
+      </li>
+      <li>Instanzvariablen per Konstruktor-Parameter direkt in Parameterliste anlegen
+
+        <!--@formatter:off-->
+<pre w11k-pretty-print lang="ts">
+class Student {
+  constructor(public name: string, private matr: number) {}
+}
+</pre>
+        <!--@formatter:on-->
+      </li>
+    </ul>
+  </div>
+
+</div>

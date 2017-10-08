@@ -1,13 +1,13 @@
-# ng2 ❤ TypeScript - und du?
+# TypeScript - Basics
 
-Dieses Repository enthält die Präsentation zu meinem Vortrag 'ng2 ❤ TypeScript - und du?'. Eine PDF-Datei mit den Folien zum Vortrag liegt unter ```etc/pdf```.
+Dieses Repository enthält die Präsentation zu meinem Vortrag 'TypeScript - Basics'. Eine PDF-Datei mit den Folien zum Vortrag liegt unter ```etc/pdf```.
 
 ## Zusammenfassung
 
 JavaScript ist durch den anhaltenden Boom von Web-Anwendungen zu einer der wichtigsten Sprachen der letzten Jahre geworden. Immer mehr und immer größere Anwendungen werden mit JavaScript entwickelt und gewartet werden. Doch eignet sich JavaScript dafür überhaupt? Unsere Erfahrung zeigt hier ganz klar: jein.
 JavaScript hat seine Stärken, aber auch ausgeprägte Schwächen, die gerade im Bereich professioneller Anwendungsentwickler zum Tragen kommen. TypeScript verspricht hier Besserung.
 
-In diesem Talk zeige ich welche Vorteile TypeScript hat und wie es sinnvoll eingesetzt werden kann, nicht nur zusammen mit Angular 2. Wo liegen die Stärken und wo ist noch Luft nach oben?
+In diesem Talk zeige ich welche Vorteile TypeScript hat und wie es sinnvoll eingesetzt werden kann, nicht nur zusammen mit Angular.
 
 
 ## Kurz-Bio

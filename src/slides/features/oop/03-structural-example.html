@@ -1,0 +1,24 @@
+<div w11k-slide-master="ts-feature">
+  <span w11k-slide-part-source="header">
+    Structural Typing
+  </span>
+
+  <div w11k-slide-part-source="content">
+    <!--@formatter:off-->
+<pre w11k-pretty-print lang="ts">
+interface HasLength { length: number }
+
+function printLength(obj: HasLength) {
+    console.log("Länge: " + obj.length);
+}
+
+let o = { length: 10 };
+printLength(o);
+printLength([1, 2, 3]);
+printLength("Hello TypeScript");
+</pre>
+    <!--@formatter:on-->
+  </div>
+
+
+</div>

@@ -1,0 +1,25 @@
+<div w11k-slide-master="es6-feature">
+  <span w11k-slide-part-source="header">
+    Konstruktor
+  </span>
+
+  <div w11k-slide-part-source="content">
+    <ul class="simple">
+      <li>Ermöglicht Werte bei der Erzeugung des Objektes mitzugeben</li>
+      <li>Sinnvoll für <i>Pflichtfelder</i></li>
+      <li>Wird als Methode mit dem Namen <code>constructor</code> definiert</li>
+    </ul>
+
+    <!--@formatter:off-->
+<pre w11k-pretty-print lang="ts">
+class MyClass {
+  constructor(wert: string) {
+    // wert benutzen
+  }
+}
+let myc: MyClass = new MyClass("ein Wert");
+</pre>
+    <!--@formatter:on-->
+  </div>
+
+</div>

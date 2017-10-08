@@ -1,0 +1,33 @@
+<div w11k-slide-master="ts-feature">
+  <div w11k-slide-part-source="header">
+    Type Inferencing bei Funktionsparametern
+  </div>
+
+  <div w11k-slide-part-source="content">
+    <ul class="simple">
+      <li>Für alleinstehende Funktionen nicht möglich
+        <ul>
+          <li>Parameter ohne expliziten Typ sind <code>any</code></li>
+          <li>Kann per Konfiguration verboten werden (<i>noImplicitAny</i>)</li>
+        </ul>
+
+        <!--@formatter:off-->
+<pre w11k-pretty-print lang="ts">
+// 'a' and 'b' are both of type any: a explicit, b implicit
+function foo(a: any, b) {}
+</pre>
+        <!--@formatter:on-->
+      </li>
+      <li>Type-Inferencing bei Lamdas möglich
+        <!--@formatter:off-->
+<pre w11k-pretty-print lang="ts">
+// type of result defined by signature of bar
+bar(function callback(result) {});
+</pre>
+        <!--@formatter:on-->
+      </li>
+
+    </ul>
+  </div>
+
+</div>
